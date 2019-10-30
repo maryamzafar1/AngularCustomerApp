@@ -1,0 +1,5 @@
+<h1 [hidden]="!isVisible">{{title}}</h1>
+<button (click)="toggleVisibility()">Show/Hide Title</button>
+<button (click)=changeColor()>Change Color</button>
+<span>{{color | capitalize}}</span>
+<app-customers-list [customers]="people" [color]="color"></app-customers-list>
